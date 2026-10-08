@@ -2,7 +2,7 @@
 session_start();
 
 // Make sure the administrator is logged in
-if (!isset($_SESSION['is_admin'])) {
+(if (!isset($_SESSION['is_valid_admin'])) { {
     header('Location: index.php');
     exit();
 }
